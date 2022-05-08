@@ -1,0 +1,451 @@
+/* start section header style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya', serif;
+    box-sizing: border-box;  
+    
+}
+.clr{
+    clear: both;
+}
+.header{
+    min-height:  100vh; 
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)) , url(images/drew-coffman-1872.jpg);
+    background-position:center ;
+    background-size:cover;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    overflow: hidden;
+    margin-bottom: 40px;
+    width:100%;
+    position: fixed;
+    background-color: #353330;
+}
+nav .logo{
+    float:left;
+    padding: 10px;
+}
+.nav-links{
+    float: right;
+    width: 70%;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+   
+}
+nav .nav-links ul{
+    margin:0;
+    padding:0;
+    float:right;
+    
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration:none;
+    float:left;
+    padding:20px;
+}
+.nav-links ul li a:hover{
+    color:crimson;
+}
+.text-box{
+    position: relative;
+    z-index: 1;
+    margin-top: 120px;
+    vertical-align: middle;
+    text-transform: capitalize; 
+    text-align: center;
+    justify-content: center;
+    
+      
+}
+.text-box h1
+{
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.text-box p
+{
+    color: #ccc;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn-group .more{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px; /* ارتفاع btn*/
+    border: none;
+    font-size: 16px; /* حجم الخط*/
+    border-radius: 5px;  /*   حجم curve btn*/
+    text-align: center; /*  اتجاه الكلام*/
+    margin-right: 10px;/* عشان المسافه بين btn*/
+    cursor: pointer;   /*   عشان يتحول الي بوينتر لما */
+    transition: all .3s; /* ارتفاع btn*/
+    background: #8e7754;
+    color: #fff;
+    margin-top: 40px;
+
+}
+.btn-group .more:hover{
+    background: #fff;
+    color: #8e7754;
+}
+
+.btn-group .contact{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px; /* ارتفاع btn*/
+    border: none;
+    font-size: 16px; /* حجم الخط*/
+    border-radius: 5px;  /*   حجم curve btn*/
+    text-align: center; /*  اتجاه الكلام*/
+    margin-right: 10px;/* عشان المسافه بين btn*/
+    cursor: pointer;   /*   عشان يتحول الي بوينتر لما */
+    transition: all .3s; /* ارتفاع btn*/
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    margin-top: 40px;
+
+}
+.btn-group .contact:hover{
+   background: #fff;
+    color: #8e7754;
+    
+
+}
+@media screen and (max-width: 900px) {
+    nav  .logo{
+        text-align: center;
+        width: 100%;
+    }
+    .nav-links{
+        float: left;
+        width: 100%;
+        padding: 3px;
+        font-size: 15px;
+        z-index: 10;
+        text-align: center;
+       
+    }
+    nav .nav-links ul{
+        margin:0;
+        padding:0;
+        float:left;
+        margin: auto;
+        text-align: center;
+        
+    }
+    .nav-links ul li a{
+        color:white;
+        text-decoration:none;
+        float:left;
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+    }
+    .text-box p{
+        font-size: 15px;
+        padding: 5px;
+    }
+} 
+/* end section header style */
+/* start section about  style */
+.About{
+    float: left;
+    padding: 20px;
+}
+.About .half-section{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+.About .half-section img{
+    width: 90%;
+}
+.About .secondhalf-section{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+}
+.About .secondhalf-section h2{
+    width: 100%;
+    font-size: 30px;
+    margin:30px 0px;
+}
+.About .secondhalf-section p{
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.secondhalf-section .detials{
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+.detials ul{
+    list-style:none;
+    float: left;
+}
+.detials ul li{
+    float: left;
+    width: 100%;
+
+}
+.detials ul li img{
+    width: 5%;
+    float: left;
+    text-align: center;
+}
+.detials ul li p{  
+    font-size: 17px;
+    color: #686868;
+    width: 100%;
+} 
+@media screen and (max-width: 900px) {
+    .About .half-section{
+        width: 100%;
+        margin: auto;
+    }
+    .About .half-section img{
+        width: 100%;
+    }
+    .About .secondhalf-section{
+        width: 100%;
+    }
+    .About .secondhalf-section p{
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+/* end section about style */
+/* start section ouroffer  style */
+.OurOffer{
+    background-color: #F8F8F8;
+    float: left;
+    padding: 20px;
+}
+.OurOffer .ourofferdiv{ 
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+.OurOffer .ourofferdiv h2{
+    font-weight: 500;
+    margin: 30px 0;
+    font-size: 25px;
+}
+.OurOffer .ourofferdiv p{
+    max-width: 100%;
+    line-height: 1.86em;  
+    font-size: 17px;
+    color: #686868;
+    margin-bottom: 30px;
+    
+}
+.OurOffer .offerdiv{
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+.OurOffer .offerdiv img{
+    width: 90%;
+}
+@media screen and (max-width: 900px) {
+    .OurOffer .ourofferdiv{ 
+        width: 100%;
+    }
+    .OurOffer .offerdiv{
+        width: 100%;
+    }
+}
+
+
+ /* end section  ouroffer  style */
+/* start section gallery  style */
+.Gallery{
+    text-align: center;
+    padding: 20px;
+}
+.Gallery h2{
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 25px;   
+}
+.Gallery p{
+    font-size: 20px;
+    color: #686868;
+    margin-bottom: 30px;      
+}
+.Gallery .container{
+    width: 100%;
+    float: left;
+    margin: auto;
+
+}
+.Gallery .container .containerlist{
+    width: 33.3%;
+    float: left;
+}
+.Gallery .container .containerlist img{
+    width: 100%;
+    padding: 20px;
+} 
+.Gallery .container .containerlist p{
+    padding: 10px;
+}
+@media screen and (max-width: 900px) {
+    .Gallery .container .containerlist{
+        width:100%;
+    }
+}
+/* end section  gallery  style */
+/* start section blog  style */
+.Blog{
+    background-color: #F8F8F8;
+    float: left;
+    padding: 20px;
+    
+}
+.Blog .blog-one{
+    float:left;
+    width: 50%;
+    padding: 20px;
+}
+.Blog .blog-one h2{
+    font-weight: 500;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.Blog .blog-one p{
+    max-width: 100%;
+    line-height: 1.86em;  
+    font-size: 17px;
+    color: #686868;
+    margin-bottom: 30px;
+    font-size: 17px;
+    
+}
+.blog-one .blog-list{
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+.blog-list ul{
+    list-style:none;
+    float: left;
+
+}
+.blog-list ul li{
+    float: left;
+    width: 100%;
+
+}
+.blog-list ul li img{
+    width: 5%;
+    float: left;
+    text-align: center;
+}
+.blog-list ul li p{  
+    font-size: 17px;
+    color: #686868;
+    width: 100%;
+}
+.Blog .blog-two{
+    float:left;
+    width: 50%;
+    padding: 20px;
+}
+.Blog .blog-two img{
+    width: 100%;
+}
+@media screen and (max-width: 900px) {
+    .Blog .blog-one{
+        width: 100%;
+        padding: 20px;
+    }
+    .Blog .blog-two{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+ /* end section  blog  style */
+/* start section contact  style */
+.Contactus{
+    padding: 20px;
+    background-color: #403D38;
+}
+.Contactus .container{
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+.Contactus .container .Contactlist{
+   float: left;
+   width: 25%;
+   padding: 20px;
+}
+.Contactus .container .Contactlist  h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.Contactus .container .Contactlist ul{
+    list-style: none;
+}
+.Contactus .container .Contactlist ul a{
+    text-decoration: none;
+    color: #969696;
+}
+.Contactus .container .Contactlist li ,.Contactus .container .Contactlist p{ 
+    margin-top: 30px;
+    font-size: 18px;
+    color: #969696;
+    line-height: 1.86em;
+    margin-bottom: 20px;
+} 
+@media screen and (max-width: 900px) {
+    .Contactus .container .Contactlist{
+        width: 100%;
+        padding: 20px;
+    }
+}
+/* end section  contact style */
+/* start section   style */
+.end{
+    background-color:#353330;
+    text-align: center;
+    line-height: 1.68rem;
+}
+.end .cont{
+    padding: 50px 0 20px;
+}
+.end .cont img{
+    width: 30%;
+}
+span{
+    color: #969696;
+}
